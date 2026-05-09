@@ -1,0 +1,27 @@
+services:
+  web:
+    build: .
+    container_name: candidaturas_php
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - DB_HOST=host.docker.internal
+      - DB_PORT=3310
+      - DB_NAME=hcmisiones
+      - DB_USER=root
+      - DB_PASSWORD=rootpass123
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: candidaturas_phpmyadmin
+    ports:
+      - "8091:80"
+    environment:
+      PMA_HOST: host.docker.internal
+      PMA_PORT: 3310
+    depends_on:
+      - web
