@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: mysql:3306
--- Tiempo de generación: 04-05-2026 a las 01:00:45
+-- Tiempo de generación: 09-05-2026 a las 15:36:42
 -- Versión del servidor: 8.0.45
 -- Versión de PHP: 8.3.30
 
@@ -93,7 +93,7 @@ CREATE TABLE `hc_padron` (
 --
 
 INSERT INTO `hc_padron` (`cod_dpto`, `desc_dep`, `cod_dist`, `desc_dis`, `codigo_sec`, `desc_sec`, `numero_ced`, `apellido`, `nombre`, `barrio`, `direccion`, `telefono1`, `telefono2`, `partido`, `fecha_naci`, `fecha_afiliacion`, `voto1`, `voto2`, `voto3`, `voto4`, `voto5`, `fecha_mod`, `usuario_mod`, `operador`, `voto_registrado`, `mesa`, `orden`, `intension_voto`, `presupuesto`) VALUES
-(8, 'MISIONES', 1, 'CORATEI', 0, '', 4519128, 'LILIANA', 'ACOSTA ACUNA', '', 'CIA. CORATEI', '', '', '', '', '', '', '', '', '', '', '2023-04-28', '1', '', '0', 1, 1, 'VOTANT', ''),
+(8, 'MISIONES', 1, 'CORATEI', 0, '', 4519128, 'LILIANA', 'ACOSTA ACUNA', '', 'CIA. CORATEI', '', '', '', '', '', '', '', '', '', '', '2023-04-28', '1', '', '1', 1, 1, 'VOTANT', ''),
 (8, 'MISIONES', 1, 'CORATEI', 0, '', 6087792, 'MIRIAN ROSANA', 'ACOSTA AQUINO', '', 'CIA CORATEI', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1, 2, '/PLRA', ''),
 (8, 'MISIONES', 1, 'CORATEI', 0, '', 5197388, 'DAVID EZEQUIEL', 'ACOSTA CENTURION', '', 'AYOLAS-MNES.', '', '', '', '', '', '', '', '', '', '', '2023-04-28', '1', '', '0', 1, 3, '/ANR', ''),
 (8, 'MISIONES', 1, 'CORATEI', 0, '', 3579796, 'JORGE', 'ACOSTA CENTURION', '', 'CIA. CORATEI', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1, 4, '/ANR/P', ''),
@@ -8103,7 +8103,7 @@ INSERT INTO `hc_personas` (`id`, `nombre`, `apellidos`, `documento`, `razon_soci
 (13, 'DIEGO', '', '4318784', NULL, NULL, NULL, NULL, NULL, NULL, 'dcasco@gmail.com', NULL, '555555', NULL, 1, '2022-12-09 09:22:17', 1, '2022-12-16 04:33:11', 1),
 (14, 'Edu', '', '2015681', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2022-12-13 10:42:25', 1, '2022-12-13 12:47:18', 1),
 (15, 'invitado', 'invitado', '123456789', NULL, NULL, NULL, NULL, NULL, NULL, 'direccion1', NULL, '123456789', NULL, 1, '2022-12-13 12:49:08', 1, NULL, NULL),
-(16, '1', '', '1', NULL, NULL, NULL, NULL, NULL, NULL, '1', NULL, '1', NULL, 1, '2022-12-16 03:13:37', 1, '2022-12-16 03:56:06', 1),
+(16, '166', '', '1', NULL, NULL, NULL, NULL, NULL, NULL, '1', NULL, '1', NULL, 1, '2022-12-16 03:13:37', 1, '2026-05-04 08:20:52', 12),
 (17, 'juan', '', '581074', NULL, NULL, NULL, NULL, NULL, NULL, 'AYOLAS', NULL, '', NULL, 1, '2022-12-16 16:37:23', 1, '2022-12-17 12:04:47', 1),
 (18, '2', '', '2', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2022-12-16 18:36:56', 1, '2022-12-17 12:34:49', 1),
 (19, 'admin', '', '3', NULL, NULL, NULL, NULL, NULL, NULL, 'admin', NULL, 'admin', NULL, 1, '2022-12-17 08:09:39', 1, '2026-05-03 20:47:46', 72),
@@ -8118,7 +8118,7 @@ INSERT INTO `hc_personas` (`id`, `nombre`, `apellidos`, `documento`, `razon_soci
 (28, 'pruab 2', '', '13', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 12:59:52', 1, '2023-04-28 13:01:31', 1),
 (29, 'camilo', 'molas', '4794152', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 13:28:19', 1, NULL, NULL),
 (30, 'asd', '', '11', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 14:29:12', 1, '2023-04-28 14:30:56', 1),
-(31, 'ad', 'asd', '15', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 14:31:36', 1, NULL, NULL),
+(31, 'veedor', 'veedor', '15', NULL, NULL, NULL, NULL, NULL, NULL, 'veedor', NULL, 'veedor', NULL, 1, '2023-04-28 14:31:36', 1, '2026-05-07 18:56:22', 12),
 (32, 'Mesa1', '', '101', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 14:34:53', 1, '2023-04-28 14:59:01', 1),
 (33, 'Matias', 'Ferreira', '5059482', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 15:01:46', 1, NULL, NULL),
 (34, 'Noemi', '', '5958396', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-28 15:02:54', 1, NULL, NULL),
@@ -8167,7 +8167,10 @@ INSERT INTO `hc_personas` (`id`, `nombre`, `apellidos`, `documento`, `razon_soci
 (77, 'Nancy', 'Riveros', '3215449', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, 1, '2023-04-30 14:21:29', 58, NULL, NULL),
 (78, 'Administrator', 'System', '00000000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'admin@system.local', 1, '2026-05-04 00:09:31', 1, '2026-05-04 00:09:31', 1),
 (79, 'Carlos Administrator', 'System', '00000001', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'admin@system.local', 1, '2026-05-04 00:14:18', 1, '2026-05-04 00:14:18', 1),
-(80, 'Admin', 'Sistema', '99999999', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'admin@sistema.local', 1, '2026-05-04 00:34:01', 1, '2026-05-04 00:34:01', 1);
+(80, 'Admin', 'Sistema', '99999999', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'admin@sistema.local', 1, '2026-05-04 00:34:01', 1, '2026-05-04 00:34:01', 1),
+(81, '334455', '334455', '334455', NULL, NULL, NULL, NULL, NULL, NULL, '334455', NULL, '334455', NULL, 1, '2026-05-04 08:19:53', 12, NULL, NULL),
+(82, '665566', '665566', '665566', NULL, NULL, NULL, NULL, NULL, NULL, '556655', NULL, '66556666', NULL, 1, '2026-05-04 08:22:03', 12, NULL, NULL),
+(83, 'veedor', 'veedor', '666999', NULL, NULL, NULL, NULL, NULL, NULL, 'veedor', NULL, '7894564126', NULL, 1, '2026-05-07 18:57:03', 12, '2026-05-08 11:49:13', 12);
 
 -- --------------------------------------------------------
 
@@ -8261,7 +8264,7 @@ INSERT INTO `hc_usuarios` (`id`, `id_persona`, `contrasena`, `nivel_acceso`, `di
 (6, 13, 'f883ee10adc3949ba59abbe56e057f20f883e', 2, '11', 10, '2022-12-09 09:22:17', 1, '2023-04-28 14:27:44', 1),
 (7, 14, 'f883ee10adc3949ba59abbe56e057f20f883e', 3, '0', 10, '2022-12-13 10:42:25', 1, '2023-04-28 14:27:47', 1),
 (8, 15, 'f883ee10adc3949ba59abbe56e057f20f883e', 3, '', 10, '2022-12-13 12:49:08', 1, '2023-04-28 14:27:51', 1),
-(9, 16, '5849bc4ca4238a0b923820dcc509a6f75849b', 3, '11', 1, '2022-12-16 03:13:37', 1, '2022-12-16 03:56:06', 1),
+(9, 16, '5849bc4ca4238a0b923820dcc509a6f75849b', 3, '11', 1, '2022-12-16 03:13:37', 1, '2026-05-04 08:20:52', 12),
 (10, 17, 'f883ee10adc3949ba59abbe56e057f20f883e', 0, '1', 10, '2022-12-16 16:37:23', 1, '2023-04-28 14:28:02', 1),
 (11, 18, '4862cc81e728d9d4c2f636f067f89cc14862c', 2, '1', 1, '2022-12-16 18:36:56', 1, '2022-12-17 12:34:49', 1),
 (12, 19, '01fc321232f297a57a5a743894a0e4a801fc3', 0, '5', 1, '2022-12-17 08:09:39', 1, '2026-05-03 20:47:46', 72),
@@ -8275,7 +8278,7 @@ INSERT INTO `hc_usuarios` (`id`, `id_persona`, `contrasena`, `nivel_acceso`, `di
 (20, 28, '34b70202cb962ac59075b964b07152d234b70', 2, '13', 10, '2023-04-28 12:59:52', 1, '2023-04-28 14:27:32', 1),
 (21, 29, '34b70202cb962ac59075b964b07152d234b70', 2, '17', 10, '2023-04-28 13:28:19', 1, '2023-04-28 14:27:40', 1),
 (22, 30, '34b70202cb962ac59075b964b07152d234b70', 2, '17', 10, '2023-04-28 14:29:12', 1, '2023-05-02 18:52:21', 1),
-(23, 31, '34b70202cb962ac59075b964b07152d234b70', 2, '17', 1, '2023-04-28 14:31:36', 1, NULL, NULL),
+(23, 31, '8e4b0b92fd0829f0c2cdae07d63352b78e4b0', 2, '1,17', 1, '2023-04-28 14:31:36', 1, '2026-05-07 18:56:22', 12),
 (24, 32, '34b70202cb962ac59075b964b07152d234b70', 2, '13', 10, '2023-04-28 14:34:53', 1, '2023-05-02 18:53:27', 1),
 (25, 33, '336f6ba28970de8dcd26b2d18c413d49336f6', 0, '13', 10, '2023-04-28 15:01:46', 1, '2023-05-02 18:53:21', 1),
 (26, 34, 'f879512a213931ef138dd3f67d8f31c6f8795', 0, '', 10, '2023-04-28 15:02:54', 1, '2023-05-02 18:53:32', 1),
@@ -8324,7 +8327,9 @@ INSERT INTO `hc_usuarios` (`id`, `id_persona`, `contrasena`, `nivel_acceso`, `di
 (69, 77, '34b70202cb962ac59075b964b07152d234b70', 0, '', 10, '2023-04-30 14:21:29', 58, '2023-05-02 18:53:29', 1),
 (70, 0, 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, NULL, 1, '2026-05-04 00:09:39', 1, '2026-05-04 00:09:39', 1),
 (71, 79, '40fe084024bde0cf9c67333f48f37376', 1, NULL, 1, '2026-05-04 00:14:18', 1, '2026-05-04 00:14:18', 1),
-(72, 80, '01fc321232f297a57a5a743894a0e4a801fc3', 1, NULL, 1, '2026-05-04 00:34:01', 1, '2026-05-04 00:34:01', 1);
+(72, 80, '01fc321232f297a57a5a743894a0e4a801fc3', 1, NULL, 1, '2026-05-04 00:34:01', 1, '2026-05-04 00:34:01', 1),
+(73, 82, '8427ed41d8cd98f00b204e9800998ecf8427e', 0, '', 1, '2026-05-04 08:22:03', 12, NULL, NULL),
+(74, 83, '0735f3c02d4b7a7e9bbfcb659d6ebf6a0735f', 1, '1', 1, '2026-05-07 18:57:03', 12, '2026-05-08 11:49:13', 12);
 
 --
 -- Índices para tablas volcadas
@@ -8368,7 +8373,7 @@ ALTER TABLE `hc_grupos`
 -- AUTO_INCREMENT de la tabla `hc_personas`
 --
 ALTER TABLE `hc_personas`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT de la tabla `hc_sitio`
@@ -8380,7 +8385,7 @@ ALTER TABLE `hc_sitio`
 -- AUTO_INCREMENT de la tabla `hc_usuarios`
 --
 ALTER TABLE `hc_usuarios`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
